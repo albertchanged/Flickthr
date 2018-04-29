@@ -10,37 +10,43 @@ body {
   width: 60%;
   text-align: center;
 }
+.flickthr {
+  font-family: 'Heebo';
+  font-size: 60px;
+  font-weight: 800;
+  color: #0063dc;
+  margin-bottom: 5px;
+}
+.thr {
+  color: #ff0084;
+}
 .searchInput {
   width: 87%;
-  height: 25px;
+  height: 37.5px;
   margin-bottom: 3%;
-  /* display: inline-block; */
   grid-area: search;
-  border: 3px solid #D1D1D1;
+  border: 3px solid #d1d1d1;
+  padding-left: 1.25%;
+  font-size: 25px;
+}
+.photo {
+  border: 4px solid #d1d1d1;
 }
 .searchIcon {
   width: 5%;
-  /* display: inline-block; */
   grid-area: icon;
   vertical-align: middle;
-  margin-bottom: -1px;
+  margin-bottom: 7.5px;
   margin-right: 3%;
-  /* float: left */
 }
 .search {
-  /* display: grid;
-  grid-template-areas: icon search; */
-  /* grid-template-columns: 10fr 95fr; */
   margin-bottom: 1.5%;
 }
-
-
 img {
   width: 90%;
   margin-bottom: 6%;
 }
 .Grid {
   display: grid;
-  /* grid-template-areas: photo photo photo; */
   grid-template-columns: 30fr 30fr 30fr;
 }
