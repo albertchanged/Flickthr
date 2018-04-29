@@ -1,17 +1,23 @@
 import React, { Component } from 'react';
 
-class Search extends Component {
-  constructor(props) {
-    super(props);
+const Search = (props) => {
+  const handleSearchChange = (event) => {
+    setTimeout(() => {
+      props.updateGallery(document.querySelector('.searchInput').value);
+    }, 1000);
   }
-  render() {
-    return (
-      <div className="search">
-        <img className="searchIcon" src="http://chittagongit.com//images/search-icon-vector/search-icon-vector-10.jpg" />
-        <input className="searchInput" type="text" placeholder="Search" />
-      </div>
-    )
-  }
+  return (
+    <div className="search">
+      <img className="searchIcon" src="http://chittagongit.com//images/search-icon-vector/search-icon-vector-10.jpg" />
+      <input 
+        id="inputBox"
+        className="searchInput" 
+        type="text" 
+        placeholder="Search" 
+        onChange={handleSearchChange}
+      />
+    </div>
+  );
 }
 
 export default Search;

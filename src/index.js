@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import style from './style.css';
 import Search from './components/Search';
 import Gallery from './components/Gallery';
-import axios from 'axios';
+import style from './style.css';
 import FLICKR from '../flickr.js';
-// import photo from '../'
+import axios from 'axios';
 
 class App extends Component {
   constructor(props) {
@@ -15,17 +14,15 @@ class App extends Component {
     }
   }
   componentDidMount() {
-    this.getGallery('puppy');
+    this.getGallery('dog');
   }
   getGallery(query) {
     axios.get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${FLICKR.API_KEY}&tags=${query}&per_page=30&format=json&nojsoncallback=1`)
       .then((res) => {
-        let photos = res.data.photos.photo;
-        if (photos.length > 0) {
-          this.setState({
-            photoList: photos
-          });
-        }
+        let photos = (res.data.photos.photo.length > 0) ? res.data.photos.photo : [];
+        this.setState({
+          photoList: photos
+        });
       })
       .catch((err) => {
         console.error(err);
@@ -35,7 +32,7 @@ class App extends Component {
     return (
       <div>
         <h1>Flickthr</h1>
-        <Search />
+        <Search updateGallery={this.getGallery.bind(this)} />
         <Gallery photoList={this.state.photoList} />
       </div>
     );
