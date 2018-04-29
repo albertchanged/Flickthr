@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
+import Modal from './Modal';
 
-class Photo extends Component {
-  constructor(props) {
-    super(props);
+const Photo = (props) => {
+  const openModal = () => {
+    props.showModal(props.url);
   }
-  render() {
-    return (
-      <div id="pageBody">
-        <img src={this.props.url} />
-      </div>
-    )
-  }
+  return (
+    <div className="photoContainer">
+      <img 
+        src={props.url} 
+        className="photo"
+        onClick={openModal}
+      />   
+    </div>
+  );
 }
 
 export default Photo;
