@@ -1,22 +1,21 @@
-/* @import "suitcss-components-grid"; */
+/* @import "../node_modules/suitcss-utils"; */
 
 /* :root {
   --Grid-font-size: 1rem;
   --Grid-gutter-size: 10px;
 } */
 
+/* --------------- Default styling --------------- */
+
 body {
   margin: auto;
   text-align: center;
-  width: 60%;
 }
 
 .flickthr {
   color: #0063dc;
   font-family: "Heebo";
-  font-size: 60px;
   font-weight: 800;
-  margin-bottom: 5px;
 }
 
 .thr {
@@ -24,14 +23,8 @@ body {
 }
 
 .searchInput {
-  border: 3px solid #d1d1d1;
-  font-size: 25px;
+  border: 4px solid #c1c1c1;
   grid-area: search;
-  height: 37.5px;
-  margin-bottom: 3%;
-  padding-bottom: 0.15%;
-  padding-left: 1%;
-  width: 87%;
 }
 
 .failedSearch {
@@ -40,20 +33,14 @@ body {
 }
 
 .photoContainer {
-  height: 230px;
-  margin-bottom: 10%;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
   position: relative;
-  width: 230px;
-  /* object-fit: cover; */
-  /* background: center center / cover; */
 }
 
-.photo, 
+.photo,
 .photoContainer img {
-  border: 5px solid black;
   filter: brightness(90%);
   height: auto;
   left: 50%;
@@ -64,24 +51,13 @@ body {
 }
 
 .photo:hover {
+  cursor: pointer;
   filter: brightness(100%);
 }
 
 .searchIcon {
   grid-area: icon;
-  margin-bottom: 7.5px;
-  margin-right: 3%;
   vertical-align: middle;
-  width: 5%;
-}
-
-.search {
-  margin-bottom: 1.5%;
-}
-
-img {
-  margin-bottom: 6%;
-  width: 90%;
 }
 
 .Grid {
@@ -104,17 +80,17 @@ img {
 
 .modalContent {
   display: inline-block;
-  margin-top: 5%;
   position: relative;
 }
+
 .modalPhoto {
   border: 2.5px solid white;
-  margin-top: 10%;
   width: auto;
 }
 
 .closeModal {
   color: #b1b1b1;
+  cursor: pointer;
   font-family: "Heebo";
   font-size: 60px;
   margin: auto;
@@ -124,4 +100,301 @@ img {
   right: 0;
   top: 0;
   transform: rotate(45deg);
+}
+
+/* --------------- Mobile Styling --------------- */
+
+@media screen and (min-width: 300px) and (max-width: 400px) and (max-height: 750px) {
+
+  body {
+    margin-left: -10px;
+    overflow-x: hidden;
+    width: 20%;
+  }
+
+  .flickthr {
+    font-size: 100px;
+    margin-bottom: 20px;
+    margin-left: 260%;
+    position: relative;
+  }
+
+  .thr {
+    color: #ff0084;
+  }
+
+  .failedSearch {
+    margin-left: 80%;
+    position: absolute;
+  }
+
+  .searchInput {
+    font-size: 35px;
+    height: 60px;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: -100px;
+    padding-bottom: 0.15%;
+    padding-left: 5%;
+    position: absolute;
+    width: 153%;
+  }
+
+  .photoContainer {
+    height: 230px;
+    margin: 2%;
+    width: 230px;
+  }
+
+  .photo,
+  .photoContainer img {
+    border: 5px solid white;
+  }
+
+  .searchIcon {
+    margin-left: 20%;
+    margin-right: 3%;
+    margin-top: 20%;
+    width: 75%;
+  }
+
+  .search {
+    margin-left: 15%;
+  }
+
+  img {
+    margin-bottom: 6%;
+    width: 90%;
+  }
+
+  .Grid {
+    margin-top: 75%;
+  }
+
+  .modalContent {
+    margin-top: 40%;
+  }
+
+  .modalPhoto {
+    border: 2.5px solid white;
+    margin-top: 10%;
+  }
+}
+
+/* --------------- Mobile Plus Styling --------------- */
+
+@media only screen and (min-width: 374px) and (max-width: 500px) and (min-height: 700px) and (max-height: 830px) {
+
+  body {
+    margin-left: -10px;
+    overflow-x: hidden;
+    width: 20%;
+  }
+
+  .flickthr {
+    font-size: 100px;
+    margin-bottom: 20px;
+    margin-left: 360%;
+    position: relative;
+  }
+
+  .thr {
+    color: #ff0084;
+  }
+
+  .failedSearch {
+    margin-left: 80%;
+    position: absolute;
+  }
+
+  .searchInput {
+    font-size: 35px;
+    height: 67.5px;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: -50px;
+    padding-bottom: 0.15%;
+    padding-left: 5%;
+    position: absolute;
+    width: 187.5%;
+  }
+
+  .photoContainer {
+    height: 300px;
+    margin: 2%;
+    width: 300px;
+  }
+
+  .searchIcon {
+    margin-left: 20%;
+    margin-right: 3%;
+    margin-top: 20%;
+    vertical-align: middle;
+    width: 75%;
+  }
+
+  .search {
+    margin-left: 15%;
+  }
+
+  img {
+    margin-bottom: 6%;
+    width: 110%;
+  }
+
+  .Grid {
+    margin-top: 75%;
+  }
+
+  .modalContent {
+    margin-top: 40%;
+  }
+
+  .modalPhoto {
+    border: 2.5px solid white;
+    margin-top: 10%;
+  }
+}
+
+/* --------------- iPad Styling --------------- */
+
+@media only screen and (min-width: 750px) and (max-width: 1000px) {
+
+  body {
+    margin-left: 15px;
+    width: 60%;
+  }
+
+  .flickthr {
+    font-size: 80px;
+    margin-bottom: 40px;
+    margin-left: 53%;
+  }
+
+  .thr {
+    color: #ff0084;
+  }
+
+  .searchInput {
+    border: 4px solid #c1c1c1;
+    font-size: 25px;
+    height: 50px;
+    margin-bottom: 10%;
+    margin-right: -279.5px;
+    padding-bottom: 0.15%;
+    padding-left: 3%;
+    width: 139%;
+  }
+
+  #pageBody {
+    margin-left: 3%;
+    width: 120%;
+  }
+
+  .photoContainer {
+    height: 229px;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    width: 229px;
+  }
+
+  .photo,
+  .photoContainer img {
+    border: 5px solid black;
+    filter: brightness(90%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .searchIcon {
+    margin-bottom: 7.5px;
+    margin-right: 5%;
+    width: 10%;
+  }
+
+  .search {
+    margin-bottom: 1.5%;
+  }
+
+  img {
+    margin-bottom: 6%;
+    width: 90%;
+  }
+
+  .modalContent {
+    margin-top: 25%;
+  }
+
+  .modalPhoto {
+    border: 2.5px solid white;
+    margin-top: 10%;
+  }
+}
+
+/* --------------- Desktop Styling --------------- */
+
+@media only screen and (min-width: 1200px) and (max-width: 1490px) {
+
+  body {
+    width: 60%;
+  }
+
+  .flickthr {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+
+  .thr {
+    color: #ff0084;
+  }
+
+  .searchInput {
+    border: 4px solid #c1c1c1;
+    font-size: 25px;
+    height: 37.5px;
+    margin-bottom: 4%;
+    padding-bottom: 0.15%;
+    padding-left: 1%;
+    width: 87%;
+  }
+
+  .photoContainer {
+    height: 230px;
+    margin-bottom: 10%;
+    width: 230px;
+  }
+
+  .photo,
+  .photoContainer img {
+    border: 5px solid black;
+    filter: brightness(90%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .searchIcon {
+    margin-bottom: 7.5px;
+    margin-right: 3%;
+    width: 5%;
+  }
+
+  .search {
+    margin-bottom: 1.5%;
+  }
+
+  img {
+    margin-bottom: 6%;
+    width: 90%;
+  }
+
+  .modalContent {
+    margin-top: 5%;
+  }
+
+  .modalPhoto {
+    border: 2.5px solid white;
+    margin-top: 10%;
+  }
 }
