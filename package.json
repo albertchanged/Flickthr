@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production && npm run preprocess",
-    "preprocess": "suitcss src/style.css build.css",
+    "preprocess": "suitcss --watch src/style.css build.css",
     "test": "npm test"
   },
   "repository": {
