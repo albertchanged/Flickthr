@@ -4,3 +4,4 @@ package-lock.json
 dist/bundle.js
 flickr.js
 npm-debug.log
+index.css
