@@ -23,16 +23,16 @@ class Gallery extends Component {
   }
   render() {
     if (!this.props.photoList.length) {
-      return <div className="failedSearch"><h1>Loading...</h1></div>
+      return <div className="u-failedSearch"><h1>Loading...</h1></div>
     }
     if (this.props.photoList[0] === 1) {
-      return <div className="failedSearch"><h1>We apologize, no photos match your query.<br />Please try another query.</h1></div>
+      return <div className="u-failedSearch"><h1>We apologize, no photos match your query.<br />Please try another query.</h1></div>
     }
     return (
-      <div id="pageBody">
+      <div id="Gallery-container">
         <div className="Grid Grid--fill Grid--withGutter">
         {(this.state.showModal) ? <Modal photo={this.state.currentPhoto} closeModal={this.closeModal.bind(this)} /> : null}
-          { 
+          {
             this.props.photoList.map((photo) => {
               let photoURL = `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`;
               return <Photo 

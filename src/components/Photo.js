@@ -6,10 +6,10 @@ const Photo = (props) => {
     props.showModal(props.url);
   }
   return (
-    <div className="photoContainer">
+    <div className="Photo-container">
       <img 
         src={props.url} 
-        className="photo"
+        className="Photo-photoStyle"
         onClick={openModal}
       />   
     </div>

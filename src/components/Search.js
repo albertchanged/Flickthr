@@ -7,15 +7,14 @@ class Search extends Component {
     this.handleSearchChange = _.debounce(this.handleSearchChange, 650);
   }
   handleSearchChange(event) {
-    this.props.updateGallery(document.querySelector('.searchInput').value);
+    this.props.updateGallery(document.querySelector('.Search-input').value);
   }
   render() {
     return (
-      <div className="search">
-        <img className="searchIcon" src="http://chittagongit.com//images/search-icon-vector/search-icon-vector-10.jpg" />
+      <div className="Search-container">
+        <img className="Search-icon" src="http://chittagongit.com//images/search-icon-vector/search-icon-vector-10.jpg" />
         <input 
-          id="inputBox"
-          className="searchInput" 
+          className="Search-input" 
           type="text" 
           placeholder="Search" 
           onChange={this.handleSearchChange.bind(this)}

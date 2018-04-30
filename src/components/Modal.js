@@ -5,17 +5,17 @@ const Modal = (props) => {
     props.closeModal();
   }
   return (
-    <div className="modalBody" onClick={closeModal}>
-      <div className="modalContent">
+    <div className="Modal-container" onClick={closeModal}>
+      <div className="Modal-bodyContent">
         <h1 
           onClick={closeModal}
-          className="closeModal"
+          className="Modal-closeButton"
         >
           +
         </h1>
         <img 
           src={props.photo} 
-          className="modalPhoto"
+          className="Modal-photoStyle"
         />
       </div>
     </div>
