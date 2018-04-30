@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Search from './components/Search';
 import Gallery from './components/Gallery';
+
 import style from './style.css';
 import FLICKR from '../flickr.js';
 import axios from 'axios';
