@@ -14,12 +14,14 @@ In your terminal or command line (CL), type
 4. `npm run build` (in the new tab) and wait for that to finish
 
 Once both `npm run`'s have completed, open the source code in an IDE and
-1. Create a new file in the root directory called `flickr.js`
+1. Create a new file called `flickr.js` in the root directory
 2. Copy this into the file:
 
+   ```javascript
    module.exports = {
      API_KEY: {REPLACE THIS}
    }
+   ```
 
 3. Replace `{REPLACE THIS}` with your own Flickr API key
 
