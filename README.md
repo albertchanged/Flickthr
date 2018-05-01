@@ -4,12 +4,12 @@ A responsive, searchable image gallery using Flickr API, React, SuitCSS, and mor
 
 ## How to use it
 
-In your terminal or command line, type
+In your terminal or command line (CL), type
 1. `git clone https://github.com/albertchanged/Flickthr.git`
 2. `cd Flickthr`
 3. `npm run start`
-...Then create a new terminal tab within the same directory
-4. `npm run build` and wait for that to finish
+⋅⋅⋅Then create a new terminal / CL tab within the same directory
+4. `npm run build` (in the new tab) and wait for that to finish
 
 Once both `npm run`'s have completed, go to your browser and
 1. Navigate to `localhost:8080`
@@ -27,3 +27,6 @@ Once both `npm run`'s have completed, go to your browser and
 * SuitCSS
 * HTML5
 * Flickr Search API
+
+
+### Big thanks to Upthere for providing this coding challenge!
