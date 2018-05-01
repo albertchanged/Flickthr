@@ -10,10 +10,14 @@ In your terminal or command line (CL), type
 3. `npm run start`
 
    Then create a new terminal / CL tab within the same directory
-   
+
 4. `npm run build` (in the new tab) and wait for that to finish
 
-Once both `npm run`'s have completed, go to your browser and
+Once both `npm run`'s have completed, open `src/index.js` in an IDE and
+1. Comment out Line 7
+2. Replace `${FLICKR.API_KEY}` on Line 23 with your own Flickr API key
+
+Lastly, go to your browser and
 1. Navigate to `localhost:8080`
 2. Browse / click photos or find more using the search box
 3. Have fun!
