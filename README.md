@@ -8,7 +8,7 @@ In your terminal or command line (CL), type
 1. `git clone https://github.com/albertchanged/Flickthr.git`
 2. `cd Flickthr`
 3. `npm run start`
-⋅⋅⋅Then create a new terminal / CL tab within the same directory
+   Then create a new terminal / CL tab within the same directory
 4. `npm run build` (in the new tab) and wait for that to finish
 
 Once both `npm run`'s have completed, go to your browser and
