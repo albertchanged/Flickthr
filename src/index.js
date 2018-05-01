@@ -16,15 +16,15 @@ class App extends Component {
   }
   componentDidMount() {
     this._isMounted = true;
-    this.getGallery('dog');
+    this.getGallery();
   }
   componentWillUnmount() {
     this._isMounted = false;
   }
-  getGallery(query) {
-    axios.get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${FLICKR.API_KEY}&tags=${query}&per_page=51&format=json&nojsoncallback=1`)
+  getGallery(query = 'puppies') {
+    axios.get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${FLICKR.API_KEY}&tags=${query}&sort=relevance&is_getty=true&per_page=51&format=json&nojsoncallback=1`)
       .then((res) => {
-        let photos = (res.data.photos.photo.length > 0) ? res.data.photos.photo : [1];
+        let photos = (query !== '' && res.data.photos && res.data.photos.photo.length > 0) ? res.data.photos.photo : [1];
         if (this._isMounted) {
           this.setState({
             photoList: photos

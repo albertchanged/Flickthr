@@ -31,7 +31,7 @@ class Gallery extends Component {
     return (
       <div id="Gallery-container">
         <div className="Grid Grid--fill Grid--withGutter">
-        {(this.state.showModal) ? <Modal photo={this.state.currentPhoto} closeModal={this.closeModal.bind(this)} /> : null}
+          {(this.state.showModal) ? <Modal photo={this.state.currentPhoto} closeModal={this.closeModal.bind(this)} /> : null}
           {
             this.props.photoList.map((photo) => {
               let photoURL = `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`;

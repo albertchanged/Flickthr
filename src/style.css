@@ -139,7 +139,7 @@ body {
     margin-left: 5%;
     margin-right: -100px;
     padding-bottom: 0.15%;
-    padding-left: 5%;
+    padding-left: 4%;
     position: absolute;
     width: 160%;
   }
@@ -227,7 +227,7 @@ body {
     margin-left: 5%;
     margin-right: -50px;
     padding-bottom: 0.15%;
-    padding-left: 5%;
+    padding-left: 4%;
     position: absolute;
     width: 192.5%;
   }
@@ -314,7 +314,7 @@ body {
 
   .Search-input {
     border: 4px solid #c1c1c1;
-    font-size: 25px;
+    font-size: 27.5px;
     height: 55px;
     margin-bottom: 10%;
     margin-right: -274px;
@@ -337,7 +337,6 @@ body {
 
   .Photo-photoStyle,
   .Photo-container img {
-    border: 5px solid black;
     filter: brightness(90%);
     left: 50%;
     top: 50%;
@@ -394,7 +393,7 @@ body {
 
   .Search-icon {
     margin-bottom: 7.5px;
-    margin-right: 7%;
+    margin-right: 5%;
     width: 10%;
   }
 
@@ -405,13 +404,13 @@ body {
 
   .Search-input {
     border: 4px solid #c1c1c1;
-    font-size: 25px;
+    font-size: 30px;
     height: 60px;
     margin-bottom: 10%;
     margin-right: -270px;
     padding-bottom: 0.15%;
     padding-left: 3%;
-    width: 135%;
+    width: 137%;
   }
 
   #Gallery-container {
@@ -428,7 +427,6 @@ body {
 
   .Photo-photoStyle,
   .Photo-container img {
-    border: 5px solid black;
     filter: brightness(90%);
     left: 50%;
     top: 50%;
@@ -487,7 +485,7 @@ body {
   .Search-input {
     border: 4px solid #c1c1c1;
     font-size: 25px;
-    height: 40px;
+    height: 45px;
     margin-bottom: 4%;
     padding-bottom: 0.15%;
     padding-left: 1%;
@@ -502,7 +500,6 @@ body {
 
   .Photo-photoStyle,
   .Photo-container img {
-    border: 5px solid black;
     filter: brightness(90%);
     left: 50%;
     top: 50%;
@@ -516,6 +513,73 @@ body {
 
   .Modal-bodyContent {
     margin-top: 5%;
+  }
+
+  .Modal-photoStyle {
+    border: 2.5px solid white;
+    margin-top: 10%;
+  }
+}
+
+/* --------------- Big Desktop Styling --------------- */
+
+@media only screen and (min-width: 1500px) and (max-width: 3000px) {
+
+  body {
+    width: 60%;
+  }
+
+  .Index-title {
+    font-size: 80px;
+    margin-bottom: 35px;
+    margin-top: 5%;
+  }
+
+  .u-titleSpanColor {
+    color: #ff0084;
+  }
+
+  .Search-icon {
+    margin-bottom: 7.5px;
+    margin-right: 3%;
+    width: 5%;
+  }
+
+  .Search-container {
+    margin-bottom: 1.5%;
+  }
+
+  .Search-input {
+    border: 4px solid #c1c1c1;
+    font-size: 30px;
+    height: 60px;
+    margin-bottom: 4%;
+    padding-bottom: 0.15%;
+    padding-left: 1.5%;
+    width: 90%;
+  }
+
+  .Photo-container {
+    height: 350px;
+    margin-bottom: 9%;
+    width: 350px;
+  }
+
+  .Photo-photoStyle,
+  .Photo-container img {
+    filter: brightness(90%);
+    max-height: 100%;
+    max-width: 100%;
+    transform: scale(3);
+  }
+
+  img {
+    margin-bottom: 6%;
+    width: 90%;
+  }
+
+  .Modal-bodyContent {
+    margin-top: 15%;
   }
 
   .Modal-photoStyle {
