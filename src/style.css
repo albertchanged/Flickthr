@@ -125,8 +125,11 @@ body {
   }
 
   .u-failedSearch {
-    margin-left: 80%;
+    line-height: 300%;
+    margin-left: 10%;
+    margin-top: 12.5%;
     position: absolute;
+    width: 170%;
   }
 
   .Search-input {
@@ -210,8 +213,11 @@ body {
   }
 
   .u-failedSearch {
-    margin-left: 80%;
+    line-height: 300%;
+    margin-left: 12.5%;
+    margin-top: 12.5%;
     position: absolute;
+    width: 200%;
   }
 
   .Search-input {
@@ -287,6 +293,13 @@ body {
 
   .u-titleSpanColor {
     color: #ff0084;
+  }
+
+  .u-failedSearch {
+    line-height: 300%;
+    margin-left: 4%;
+    position: absolute;
+    width: 90%;
   }
 
   .Search-icon {
@@ -370,6 +383,13 @@ body {
 
   .u-titleSpanColor {
     color: #ff0084;
+  }
+
+  .u-failedSearch {
+    line-height: 300%;
+    margin-left: 4%;
+    position: absolute;
+    width: 90%;
   }
 
   .Search-icon {
