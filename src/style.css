@@ -182,6 +182,8 @@ body {
   .Modal-photoStyle {
     border: 2.5px solid white;
     margin-top: 10%;
+    width:100%;
+    height: 100%;
   }
 
   .Modal-closeButton {
