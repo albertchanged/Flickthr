@@ -12,7 +12,7 @@ class Search extends Component {
   render() {
     return (
       <div className="Search-container">
-        <img className="Search-icon" src="http://chittagongit.com//images/search-icon-vector/search-icon-vector-10.jpg" />
+        <img className="Search-icon" src="../../dist/searchIcon.jpg" />
         <input 
           className="Search-input" 
           type="text" 
