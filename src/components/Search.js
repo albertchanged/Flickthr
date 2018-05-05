@@ -7,7 +7,7 @@ class Search extends Component {
     this.handleSearchChange = _.debounce(this.handleSearchChange, 650);
   }
   handleSearchChange(event) {
-    this.props.updateGallery(document.querySelector('.Search-input').value);
+    this.props.updateGallery(_.escape(document.querySelector('.Search-input').value));
   }
   render() {
     return (
